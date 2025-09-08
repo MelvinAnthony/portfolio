@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Melvin A | Data Science Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +13,32 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
+        @media (max-width: 767px) {
+            .container {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            section {
+                padding: 1.5rem;
+            }
+            .md\:flex-row {
+                flex-direction: column;
+            }
+            .md\:w-3\/4, .md\:w-1\/4, .md\:w-1\/5, .md\:w-4\/5 {
+                width: 100%;
+            }
+            .md\:grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                display: none;
+            }
+        }
         body {
             font-family: 'Inter', sans-serif;
             background-color: #F9FAFB;
             color: #374151;
+            overflow-x: hidden;
         }
         h1, h2, h3 {
             font-family: 'Poppins', sans-serif;
@@ -73,10 +95,10 @@
         </div>
     </header>
 
-    <div class="container mx-auto px-4 py-12 max-w-6xl">
+    <div class="container mx-auto px-6 sm:px-8 py-12 max-w-6xl">
 
         <!-- About Section -->
-        <section id="about" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+        <section id="about" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12" data-aos="fade-up">
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="md:w-3/4">
                     <h2 class="text-2xl font-semibold mb-6 section-title">👋 About Me</h2>
@@ -103,7 +125,7 @@
         </section>
 
         <!-- What I Do Section -->
-        <section id="whatido" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+        <section id="whatido" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-8 section-title">🚀 What I Do</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="flex items-start gap-4">
@@ -146,7 +168,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+        <section id="skills" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-8 section-title">🛠️ Skills</h2>
             <div class="space-y-6">
                 <div>
@@ -204,7 +226,7 @@
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+        <section id="experience" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-8 section-title">💼 Internship Experience</h2>
             <div class="flex flex-col md:flex-row gap-6">
                 <div class="md:w-1/5 flex justify-center md:justify-start">
@@ -229,7 +251,7 @@
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+        <section id="education" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-8 section-title">🎓 Education</h2>
             <div class="relative">
                 <!-- Timeline line -->
@@ -262,7 +284,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+        <section id="projects" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-8 section-title">📂 Projects & Research</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Project 1 -->
@@ -338,7 +360,7 @@
         </section>
 
         <!-- Certifications Section -->
-        <section id="certifications" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+        <section id="certifications" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-8 section-title">📜 Certifications</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="border-l-4 border-[#2563EB] pl-4 py-2">
@@ -365,7 +387,7 @@
         </section>
 
         <!-- Career Vision Section -->
-        <section id="vision" class="bg-white rounded-2xl shadow-sm p-8 mb-12 text-center" data-aos="fade-up">
+        <section id="vision" class="bg-white rounded-2xl shadow-sm p-6 sm:p-8 mb-12 text-center" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-6 section-title inline-block">🌱 Career Vision</h2>
             <p class="text-lg max-w-3xl mx-auto">
                 As a fresher, I want to start my career in AI and Data Science by contributing to projects where I can apply what I have learned and keep improving my skills. I am open to working across different areas, whether it is making data more accessible, building intelligent applications, or solving practical problems with machine learning and deep learning. My focus is on learning, adapting, and gaining hands-on experience, so that I can grow step by step into a capable data professional.
@@ -373,7 +395,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="bg-[#2563EB] rounded-2xl p-8 text-white" data-aos="fade-up">
+        <section id="contact" class="bg-[#2563EB] rounded-2xl p-6 sm:p-8 text-white" data-aos="fade-up">
             <h2 class="text-2xl font-semibold mb-6 text-center">🤝 Let's Connect</h2>
             <div class="flex flex-col items-center">
                 <div class="flex flex-col md:flex-row gap-6 mb-8 text-center md:text-left">
@@ -404,6 +426,30 @@
             duration: 800,
             easing: 'ease-in-out',
             once: true
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth < 768) {
+                    document.querySelector('nav').style.display = 'none';
+                }
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) {
+                document.querySelector('nav').style.display = 'flex';
+            } else {
+                document.querySelector('nav').style.display = 'none';
+            }
         });
     </script>
 </body>
