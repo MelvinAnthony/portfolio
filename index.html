@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melvin A | Data Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+            color: #374151;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #111827;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            bottom: -8px;
+            left: 0;
+            background-color: #2563EB;
+            border-radius: 2px;
+        }
+        .skill-badge {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .project-tool {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-[#111827]">Melvin A</h1>
+            <div class="flex items-center space-x-6">
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-[#374151] hover:text-[#2563EB] transition">About</a>
+                    <a href="#skills" class="text-[#374151] hover:text-[#2563EB] transition">Skills</a>
+                    <a href="#experience" class="text-[#374151] hover:text-[#2563EB] transition">Experience</a>
+                    <a href="#projects" class="text-[#374151] hover:text-[#2563EB] transition">Projects</a>
+                    <a href="#contact" class="text-[#374151] hover:text-[#2563EB] transition">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="mailto:melvinarulandu@gmail.com" class="text-[#374151] hover:text-[#2563EB] transition">
+                        <i data-feather="mail" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/melvinarulandu/" target="_blank" class="text-[#374151] hover:text-[#2563EB] transition">
+                        <i data-feather="linkedin" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+
+        <!-- About Section -->
+        <section id="about" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-3/4">
+                    <h2 class="text-2xl font-semibold mb-6 section-title">👋 About Me</h2>
+                    <p class="text-lg mb-4">
+                        Hi, I'm Melvin A, a Data Science fresher passionate about solving real-world problems with data and AI.
+                    </p>
+                    <p class="text-lg mb-4">
+                        I'm pursuing my M.Tech in Data Science (CGPA: 8.65) at Hindustan Institute of Technology & Science and have gained practical experience through projects and an internship at Truetech Solutions, where I worked on Natural Language to SQL (NL2SQL) systems using LLMs.
+                    </p>
+                    <p class="text-lg">
+                        What excites me most is turning raw data into intelligent, accessible, and impactful solutions.
+                    </p>
+                </div>
+                <div class="md:w-1/4 flex flex-col items-center">
+                    <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-[#2563EB] mb-4">
+                        <img src="C:\Users\Admin\Desktop\Protflio\melvin_photo.jpg" alt="Melvin A" class="w-full h-full object-cover">
+                    </div>
+                    <a href="C:\Users\Admin\Desktop\Protflio\Melvin_Resume.pdf" download="Melvin_A_Resume.pdf" class="bg-[#2563EB] text-white px-4 py-2 rounded-md hover:bg-[#1D4ED8] transition">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- What I Do Section -->
+        <section id="whatido" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-8 section-title">🚀 What I Do</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-start gap-4">
+                    <div class="bg-[#EFF6FF] p-3 rounded-full">
+                        <i data-feather="bar-chart-2" class="text-[#2563EB]"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-lg mb-1">Data Exploration</h3>
+                        <p class="text-[#4B5563]">I enjoy working with data and using Machine Learning and NLP to find patterns and insights.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-[#EFF6FF] p-3 rounded-full">
+                        <i data-feather="cpu" class="text-[#2563EB]"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-lg mb-1">AI Systems</h3>
+                        <p class="text-[#4B5563]">I like building simple systems that make data easier to use and understand.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-[#EFF6FF] p-3 rounded-full">
+                        <i data-feather="target" class="text-[#2563EB]"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-lg mb-1">Real-world Impact</h3>
+                        <p class="text-[#4B5563]">I'm curious about how AI can be applied in sports analytics and disaster management.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="bg-[#EFF6FF] p-3 rounded-full">
+                        <i data-feather="book-open" class="text-[#2563EB]"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-lg mb-1">Continuous Learning</h3>
+                        <p class="text-[#4B5563]">As a fresher, I focus on learning, experimenting, and improving step by step.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-8 section-title">🛠️ Skills</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-medium text-lg mb-3">Programming & Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Python</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">SQL</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg mb-3">Machine Learning & AI</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Machine Learning Algorithms</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Deep Learning</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Natural Language Processing</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Recommender Systems</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Retrieval-Augmented Generation (RAG)</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg mb-3">Libraries & Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Pandas</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">NumPy</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Scikit-Learn</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">TensorFlow</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">langchain</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg mb-3">Data Handling & Retrieval</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Vector Databases</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Semantic Search</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg mb-3">Visualization & BI</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Matplotlib</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Seaborn</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">Power BI</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium text-lg mb-3">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">GitHub</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">VS Code</span>
+                        <span class="skill-badge bg-[#EFF6FF] text-[#2563EB] px-3.5 py-1.5 rounded-full">n8n</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-8 section-title">💻 Internship Experience</h2>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="md:w-1/5 flex justify-center md:justify-start">
+                    <div class="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
+                        <i data-feather="briefcase" class="text-[#2563EB] w-8 h-8"></i>
+                    </div>
+                </div>
+                <div class="md:w-4/5">
+                    <h3 class="text-xl font-semibold text-[#2563EB]">Data Science Intern</h3>
+                    <p class="text-[#4B5563] mb-4">Truetech Solutions, Chennai (Jul 2024 – Dec 2024)</p>
+                    <ul class="space-y-2 list-disc list-inside">
+                        <li>Built a Natural Language to SQL system using GPT-4, Gemini, and Pinecone for semantic retrieval.</li>
+                        <li>Achieved 83% query accuracy through a custom multi-model evaluation framework.</li>
+                        <li>Optimized pipeline performance for low-latency, real-time responses.</li>
+                        <li>Modularized components for scalable query generation and vector search.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-8 section-title">🎓 Education</h2>
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-5 h-full w-0.5 bg-[#E5E7EB] top-0"></div>
+                
+                <!-- Education Item 1 -->
+                <div class="relative pl-12 pb-8">
+                    <div class="absolute left-5 top-1 w-3 h-3 rounded-full bg-[#2563EB] border-4 border-[#EFF6FF]"></div>
+                    <h3 class="text-xl font-semibold text-[#2563EB]">M.Tech in Data Science</h3>
+                    <p class="text-[#111827]">Hindustan Institute of Technology & Science, Chennai</p>
+                    <p class="text-[#4B5563]">2023 – 2025 | CGPA: 8.65 / 10</p>
+                </div>
+                
+                <!-- Education Item 2 -->
+                <div class="relative pl-12">
+                    <div class="absolute left-5 top-1 w-3 h-3 rounded-full bg-[#2563EB] border-4 border-[#EFF6FF]"></div>
+                    <h3 class="text-xl font-semibold text-[#2563EB]">B.Tech in Computer Science Engineering</h3>
+                    <p class="text-[#111827]">Karunya Institute of Technology and Sciences, Coimbatore</p>
+                    <p class="text-[#4B5563]">2019 – 2023 | CGPA: 6.71 / 10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-8 section-title">📂 Projects & Research</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="border border-gray-100 rounded-xl p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-[#2563EB] mb-2">Enhancing Data Interaction with Retrieval-Augmented SQL Generation</h3>
+                    <p class="text-[#4B5563] mb-4">Designed an NL2SQL system using GPT-4, Claude, and vector databases. Improved alignment of queries with user intent using Pinecone and PostgreSQL.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Python</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">SQL</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">RAG</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Vector Databases</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">LangChain</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Semantic Search</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Embedding Models</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">GPT-4</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="border border-gray-100 rounded-xl p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-[#2563EB] mb-2">Navigating Player Performance Clusters for Sports Excellence</h3>
+                    <p class="text-[#4B5563] mb-4">Analysed cricket player performance with K-Means and GMM clustering. Built a recommender system for squad optimization. Published at IEEE Conference.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Python</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Unsupervised Learning</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Recommender Systems</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Ranking System</span>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="border border-gray-100 rounded-xl p-6 hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-[#2563EB] mb-2">Sentiment Analysis for Disaster Management</h3>
+                    <p class="text-[#4B5563] mb-4">Built CNN, GRU, and Bi-LSTM models to classify social media posts during disasters. Enabled better crisis response through sentiment classification. Published at IEEE Conference.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Python</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">NLP</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">Deep Learning</span>
+                        <span class="project-tool bg-gray-100 text-[#374151] px-3 py-1 rounded-full">TensorFlow</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="bg-white rounded-2xl shadow-sm p-8 mb-12" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-8 section-title">📜 Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border-l-4 border-[#2563EB] pl-4 py-2">
+                    <h3 class="font-semibold text-[#2563EB]">Google Data Analytics Professional Certificate</h3>
+                    <p class="text-[#4B5563]">Coursera</p>
+                </div>
+                <div class="border-l-4 border-[#2563EB] pl-4 py-2">
+                    <h3 class="font-semibold text-[#2563EB]">Sports Analytics</h3>
+                    <p class="text-[#4B5563]">Royals School of Business</p>
+                </div>
+                <div class="border-l-4 border-[#2563EB] pl-4 py-2">
+                    <h3 class="font-semibold text-[#2563EB]">Python Programming</h3>
+                    <p class="text-[#4B5563]">Jobaaj Learning</p>
+                </div>
+                <div class="border-l-4 border-[#2563EB] pl-4 py-2">
+                    <h3 class="font-semibold text-[#2563EB]">SQL</h3>
+                    <p class="text-[#4B5563]">Jobaaj Learning</p>
+                </div>
+                <div class="border-l-4 border-[#2563EB] pl-4 py-2">
+                    <h3 class="font-semibold text-[#2563EB]">Industry 4.0 and IoT</h3>
+                    <p class="text-[#4B5563]">NPTEL</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Vision Section -->
+        <section id="vision" class="bg-white rounded-2xl shadow-sm p-8 mb-12 text-center" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-6 section-title inline-block">🌱 Career Vision</h2>
+            <p class="text-lg max-w-3xl mx-auto">
+                As a fresher, I want to begin my career in Data Science and AI, contributing to projects that challenge me technically and create real-world impact. I am particularly motivated by applications of AI in making data accessible, advancing sports analytics, and supporting disaster management efforts.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-[#2563EB] rounded-2xl p-8 text-white" data-aos="fade-up">
+            <h2 class="text-2xl font-semibold mb-6 text-center">📬 Let's Connect</h2>
+            <div class="flex flex-col items-center">
+                <div class="flex flex-col md:flex-row gap-6 mb-8 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <i data-feather="mail" class="w-5 h-5"></i>
+                        <a href="mailto:melvinarulandu@gmail.com" class="hover:underline">melvinarulandu@gmail.com</a>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start gap-3">
+                        <i data-feather="linkedin" class="w-5 h-5"></i>
+                        <a href="https://www.linkedin.com/in/melvinarulandu/" target="_blank" class="hover:underline">LinkedIn Profile</a>
+                    </div>
+                </div>
+                <a href="mailto:melvinarulandu@gmail.com" class="bg-white text-[#2563EB] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
+                    Let's Connect
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-center text-[#4B5563]">
+            <p>© 2025 Melvin A. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        feather.replace();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
